@@ -7,6 +7,13 @@ long int fib(long int n) {
   else
     return fib(n - 1) + fib(n - 2);
 }
+//função que compara dois valores
+void verifica(long int numero,long int fibo) {
+  if(numero == fibo)
+    printf("Número pertence a sequência\n");
+  else if(numero < fibo)
+    printf("O número não pertence a sequência\n");
+}
 
 int main() {
   long int numero,cont = 0,fibo;
@@ -16,9 +23,7 @@ int main() {
     cont++;
     fibo = fib(cont);
   }
-  if(numero == fibo)
-    printf("Número pertence a sequência\n");
-  else if(numero < fibo)
-    printf("O número não pertence a sequência\n");
+  //realiza o teste que verifica se um numero
+  verifica(numero,fibo);
   return 0;
 }
