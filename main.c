@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//funcção que calcula um número da sequência de fibonacci.
 long int fib(long int n) {
   if(n < 2)
     return n;
